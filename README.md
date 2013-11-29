@@ -15,5 +15,7 @@ And then execute:
 
 Then you might want to decode the MsgPack-ed file
 
-    $ cat DATA.mpac | msgpacker -d > DATA_decoded.json
+    $ cat DATA.mpac | msgpacker -d -n > DATA_decoded.json
+
+If you give the -n option, it prints decoded json items with newline(\n) character appended.
 

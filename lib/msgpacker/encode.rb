@@ -3,6 +3,10 @@ require "msgpack"
 
 module MsgPacker
   class Encoder
+    def initialize opts = {}
+      @options = opts.dup
+    end
+    
     def object_parsed obj
       @os.write obj.to_msgpack
     end
