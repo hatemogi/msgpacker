@@ -6,18 +6,16 @@ module MsgPacker
     def initialize opts = {}
       @options = opts.dup
     end
-    
+
     def object_parsed obj
       @os.write obj.to_msgpack
     end
 
     def code is = STDIN, os = STDOUT
-      @is, @os = is, os
+      @os = os
       parser = Yajl::Parser.new
       parser.on_parse_complete = method(:object_parsed)
-      @is.each_char do |ch|
-        parser << ch
-      end
+      is.each_char { |ch| parser << ch }
     end
   end
 end
