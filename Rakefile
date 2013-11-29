@@ -4,7 +4,6 @@ require "rake/testtask"
 Rake::TestTask.new do |t|
   t.name = "spec"
   t.libs << "lib"
-  t.verbose = true
   t.pattern = 'spec/*_spec.rb'
 end
 

@@ -12,6 +12,9 @@ module MsgPacker
         opts.on("-n", "--newline", "appends a newline character for each JSON item") do |n|
           options[:newline] = n
         end
+        opts.on("-p", "--pretty", "prettify JSON output") do |p|
+          options[:pretty] = p
+        end
       end.parse!
       coder = unless options[:decode]
         MsgPacker::Encoder
