@@ -1,4 +1,3 @@
-# coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'msgpacker/version'
@@ -10,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["hatemogi@gmail.com"]
   spec.description   = %q{json to/from msgpack converter}
   spec.summary       = %q{you will have an executable}
-  spec.homepage      = ""
+  spec.homepage      = "http://github.com/hatemogi/msgpacker"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

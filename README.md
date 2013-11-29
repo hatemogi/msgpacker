@@ -1,29 +1,18 @@
-# Msgpacker
+# MsgPacker: json2msgpack, msgpack2json
 
-TODO: Write a gem description
+a rubygem which converts JSON to MsgPack and vice versa. 
+It contains an excutable script that reads from STDIN and writes the converted stream to STDOUT.
 
-## Installation
+## Installation and Usage
 
-Add this line to your application's Gemfile:
-
-    gem 'msgpacker'
+Install this gem
+    gem install msgpacker
 
 And then execute:
 
-    $ bundle
+    $ cat DATA.json | msgpacker > DATA.mpac
 
-Or install it yourself as:
+Then you might want to decode the MsgPack-ed file
 
-    $ gem install msgpacker
+    $ cat DATA.mpac | msgpacker -d > DATA_decoded.json
 
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
