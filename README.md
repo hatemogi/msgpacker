@@ -1,9 +1,9 @@
-# MsgPacker: json2msgpack, msgpack2json
+# MsgPacker: JSON ⬌ MessagePack
 
-a rubygem which converts a JSON stream to MsgPack-ed one and vice versa. 
-It contains an excutable script that reads from STDIN and writes the converted stream to STDOUT.
+a rubygem which converts a [JSON](http://www.json.org) stream to [MessagePack](http://msgpack.org)-ed one and vice versa. 
+It contains an excutable script that reads STDIN and writes the converted stream to STDOUT.
 
-## Installation and Usage
+## Installation
 
 Install this gem
 
@@ -17,7 +17,7 @@ Prepare a sample JSON file
 
     $ echo '{"compact": true, "schema": 0}' > DATA.json 
 
-And then execute:
+And then execute the following to make it as MessagePack
 
     $ cat DATA.json | msgpacker > DATA.mpac
 
