@@ -6,9 +6,9 @@ Gem::Specification.new do |spec|
   spec.name          = "msgpacker"
   spec.version       = Msgpacker::VERSION
   spec.authors       = ["Daehyun Kim"]
-  spec.email         = ["hatemogi@gmail.com"]
-  spec.description   = %q{json to/from msgpack converter}
-  spec.summary       = %q{you will have an executable}
+  spec.email         = ["https://twitter.com/hatemogi"]
+  spec.description   = %q{This gem provides a executable ruby script that converts a JSON stream to MessagePack-ed one and the other way around.}
+  spec.summary       = %q{streaming JSON <-> MessagePack converter}
   spec.homepage      = "http://github.com/hatemogi/msgpacker"
   spec.license       = "MIT"
 
